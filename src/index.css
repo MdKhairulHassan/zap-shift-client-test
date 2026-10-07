@@ -1,0 +1,29 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kings&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'tailwindcss';
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@plugin "daisyui/theme" {
+  name: 'light';
+  default: true;
+  --color-primary: #caeb66;
+  --color-secondary: #03373D;
+}
+
+/* Don't write urls after import tailwindcss and daisyui. like this: @import url('https://fonts.googleapis.com/css2?family=Kings&display=swap');*/
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* body {
+  font-family: 'Kings', cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
+ 
