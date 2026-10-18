@@ -22,6 +22,7 @@ import AssignRiders from '../pages/Dashboard/AssignRiders/AssignRiders';
 import RiderRoute from './RiderRoute';
 import AssignedDeliveries from '../pages/Dashboard/AssignedDeliveries/AssignedDeliveries';
 import CompletedDeliveries from '../pages/Dashboard/CompletedDeliveries/CompletedDeliveries';
+import ParcelTrack from '../pages/ParcelTrack/ParcelTrack';
 // import { appendErrors } from 'react-hook-form';
 
 export const router = createBrowserRouter([
@@ -62,6 +63,10 @@ export const router = createBrowserRouter([
         path: 'coverage',
         Component: Coverage,
         loader: () => fetch('/serviceCenters.json').then(res => res.json()),
+      },
+      {
+        path: 'parcel-track/:trackingId',
+        Component: ParcelTrack,
       },
     ],
   },
