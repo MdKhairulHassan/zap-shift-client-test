@@ -49,7 +49,7 @@ const MyParcels = () => {
   };
 
   const handlePayment = async parcel => {
-    const paymentInfo = {
+    const pacelInfo = {
       parcelId: parcel?._id,
       cost: parcel?.cost,
       senderEmail: parcel?.senderEmail,
@@ -57,11 +57,9 @@ const MyParcels = () => {
       // parcelType: parcel?.parcelType,
       trackingId: parcel?.trackingId,
     };
-    const res = await axiosSecure.post(
-      '/payment-checkout-session',
-      paymentInfo,
-    );
-    console.log(res.data.url);
+    const res = await axiosSecure.post('/payment-checkout-session', pacelInfo);
+
+    // console.log(res.data.url);
     // window.location.href = res.data.url;
     window.location.assign(res.data.url); // Redirect to Stripe checkout page
   };
@@ -93,7 +91,7 @@ const MyParcels = () => {
                 <td>{parcel.cost}</td>
                 <td>
                   {parcel.paymentStatus === 'paid' ? (
-                    <span className="text-green-400">paid</span>
+                    <span className="text-green-800">paid</span>
                   ) : (
                     // <Link to={`/dashboard/payment/${parcel._id}`}>
                     //   <button className="btn btn-primary text-black btn-small">

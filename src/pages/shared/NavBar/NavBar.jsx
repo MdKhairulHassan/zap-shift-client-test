@@ -17,13 +17,13 @@ const NavBar = () => {
         <NavLink to={'/'}>Home</NavLink>
       </li>
       <li>
-        <NavLink to={'/send-parcel'}>Send Parcel</NavLink>
+        <NavLink to={'/send-parcel'}>Send A Parcel</NavLink>
       </li>
       <li>
         <NavLink to={'/rider'}>Be A Rider</NavLink>
       </li>
       <li>
-        <NavLink to={'/coverage'}>Coverage</NavLink>
+        <NavLink to={'/coverage'}>Coverage Areas</NavLink>
       </li>
       <li>
         <NavLink to={'/aboutus'}>About Us</NavLink>

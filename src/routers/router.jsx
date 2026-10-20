@@ -12,7 +12,7 @@ import SendParcel from '../pages/SendParcel/SendParcel';
 import DashboardLayout from '../layouts/DashboardLayout';
 import MyParcels from '../pages/Dashboard/MyParcels/MyParcels';
 import Payment from '../pages/Dashboard/Payment/Payment';
-import PaymentSuccess from '../pages/Dashboard/Payment/paymentSuccess';
+import PaymentSuccess from '../pages/Dashboard/Payment/PaymentSuccess';
 import PaymentCancelled from '../pages/Dashboard/Payment/PaymentCancelled';
 import PaymentHistory from '../pages/Dashboard/PaymentHistory/PaymentHistory';
 import ApproveRiders from '../pages/Dashboard/ApproveRiders/ApproveRiders';
