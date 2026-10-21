@@ -23,6 +23,7 @@ import RiderRoute from './RiderRoute';
 import AssignedDeliveries from '../pages/Dashboard/AssignedDeliveries/AssignedDeliveries';
 import CompletedDeliveries from '../pages/Dashboard/CompletedDeliveries/CompletedDeliveries';
 import ParcelTrack from '../pages/ParcelTrack/ParcelTrack';
+import DashboardHome from '../pages/Dashboard/DashboardHome/DashboardHome';
 // import { appendErrors } from 'react-hook-form';
 
 export const router = createBrowserRouter([
@@ -92,6 +93,10 @@ export const router = createBrowserRouter([
       </PrivateRoute>
     ),
     children: [
+      {
+        index: true,
+        Component: DashboardHome,
+      },
       {
         path: 'my-parcels',
         Component: MyParcels,
